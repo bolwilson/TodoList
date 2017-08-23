@@ -29,7 +29,7 @@ li {
 	color: #666;
 }
 
-li:nth-child(2) {
+li:nth-child(odd) {
 	background: #f7f7f7;
 }
 
