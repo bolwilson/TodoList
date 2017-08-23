@@ -20,6 +20,15 @@ h1.headline {
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
 }
+h2 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+.fa-heart {
+	color: red;
+}
+
+
 
 ul {
 	list-style: none;
@@ -27,7 +36,7 @@ ul {
 	padding: 0;
 }
 
-li {
+ul#todo li {
 	background: #fff;
 	height: 20%;
 	color: #666;
@@ -35,12 +44,75 @@ li {
 
 
 
-li:nth-child(odd) {
+ul#todo li:nth-child(odd) {
 	background: #f7f7f7;
 }
-li:last-child {
-	border-radius: 25px;
+ul#todo li:last-child {
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
 }
+
+ul#todo li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
+
+
+
+/* Social Icons */
+ul.social {
+    margin-top: 10px;
+    padding-left: 40%;
+}
+.social li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    color: #4078c0;
+}
+.fa-github:hover {
+    color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    color: #0084b4;
+}
+.fa-twitter:hover {
+    color: #00aced;
+}
+
+
+.fa-instagram {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    color: #125688;
+}
+.fa-instagram:hover {
+    color: #0073a4;
+}
+
+
 
 input {
 	font-family: cursive;
@@ -69,11 +141,6 @@ span {
 	display: inline-block;
 	transition: .3s linear;
 	opacity: 0;
-}
-
-li:hover span {
-	width: 40px;
-	opacity: 1.0;
 }
 
 .fa-pencil {
